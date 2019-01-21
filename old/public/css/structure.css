@@ -1,0 +1,13 @@
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header .picture {
+  float: left;
+}
+
+header h1 {
+  /*float: left;*/
+}

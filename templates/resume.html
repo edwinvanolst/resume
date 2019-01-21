@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Edwin van Olst</title>
+  <meta name="author" content="Edwin van Olst">
+  <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/base.css') }}">
+  <link rel="stylesheet" media="print" 
+href="css/print.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+<div id="resume">
+  <header>
+		<button id="theme-button">
+			<i class="fas fa-adjust"></i>
+		</button>
+		<button id="print-button">
+			<i class="fas fa-print"></i>
+		</button>
+		<button id="source-button">
+			<i class="fas fa-code-branch"></i>
+			<!--<i class="fas fa-github"></i>-->
+		</button>
+    <h1>Edwin van Olst</h1>
+    <ul id="details">
+      <li class="icon-print">25 januari 1986 (32)</li>
+      <li class="icon-map">Turnhout, Belgie</li>
+    </ul>
+    <!--<ul id="buttons">-->
+      <!--<li><a>Contrast</a></li>-->
+      <!--<li><a>Print</a></li>-->
+      <!--<li><a>Source</a></li>-->
+    <!--</ul>-->
+  </header>
+  <main>
+    <section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis est ornare, suscipit urna nec, mollis felis. Phasellus condimentum orci at leo vestibulum ultricies. Proin ultricies urna ac magna consequat, et viverra turpis cursus. Aliquam mollis ligula id placerat aliquet. Nulla eget tempus ex. Aenean tincidunt purus quis ex condimentum aliquet a nec augue. Donec consequat odio vitae egestas laoreet. Sed sed magna ac mauris volutpat gravida nec eu sem. In eu nisi sed tellus congue iaculis. Nam rutrum nec ante ac imperdiet. Duis pretium augue fermentum, auctor odio eget, aliquet dui.</p>
+			<h2>Education</h2>
+			<table>
+				<tr>
+					<td>2017 - Nu</td>
+					<td>EduKempen</td>
+					<td>Netwerktechnicus</td>
+				</tr>
+				<tr>
+					<td>2008 - 12</td>
+					<td>KH Leuven</td>
+					<td>Toegepaste Informatica</td>
+				</tr>
+				<tr>
+					<td>1996 - 06</td>
+					<td>Secundair Onderwijs</td>
+					<td>Humane Wetenschappen</td>
+				</tr>
+			</table>
+			<h2>History</h2>
+			<table>
+				<tr>
+					<td>2015 - 18</td>
+					<td>Natra Malle</td>
+					<td>Operator/Heftrucker</td>
+				</tr>
+				<tr>
+				<td>2014 - 15</td>
+					<td>Astra Sweets Turnhout</td>
+					<td>Machine Operator</td>
+				</tr>
+				<tr>
+					<td>2012 - 13</td>
+					<td>Armour Vosselaar</td>
+					<td>Magento Developer</td>
+				</tr>
+				<tr>
+					<td>2006 - 12</td>
+					<td>Horeca</td>
+				</tr>
+			</table>
+    </section>
+		<aside>
+			<h3>Taal</h3>
+			<ul id="contact">
+				<li>Dutch<span>Vloeiend</span></li>
+				<li>English<span>Vloeiend</span></li>
+				<li>French<span>Basis</span></li>
+			</ul>
+			<h3>Contact</h3>
+			<ul id="contact">
+				<li class="icon-phone">+32 477 76 45 30</li>
+				<li class="icon-email"><a 
+	href="mailto:edwinvanolst@me.com">edwinvanolst@me.com</a></li>
+				<li  class="icon-message" id="message-button">Leave a message</li>
+			</ul>
+			<h3>Hobbies</h3>
+			<ul>
+				<li>Computers</li>
+				<li>Electronics</li>
+				<li>Programming</li>
+			</ul>
+			<h3>Deze CV</h3>
+			<ul>
+				<li>Runs on Docker</li>
+				<li>Uses MariaDB</li>
+				<li>Source: <a href="github.com">GitHub</a></li>
+			</ul>
+		</aside>
+	</main>
+	<!--<footer>test</footer>-->
+</div>
+<script src="{{ url_for('static',filename='js/resume.js') }}"></script>
+</body>
+</html>

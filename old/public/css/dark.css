@@ -1,0 +1,19 @@
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark .picture {
+  border-color: #fff;
+  color: #fff;
+}
+
+.dark .icon {
+  fill: #fff;
+}
+
+.dark .button,
+.dark .icon:before {
+  filter: invert(100%);
+}
+
