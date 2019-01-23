@@ -1,4 +1,5 @@
-/* Fonts */
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+
 @font-face {
   font-family: 'Rubik-Light';
   src: url('../otf/Rubik-Light.otf');
@@ -11,118 +12,140 @@
   font-family: 'Rubik';
   src: url('../otf/Rubik-Regular.otf');
 }
-body {
-	font-family: 'Rubik';
-}
 
-/* Icons */
-@import url(http://weloveiconfonts.com/api/?family=typicons);
-
-/* typicons */
-[class*="typicons-"]:before {
-  font-family: 'Typicons', sans-serif;
-}
-
-/* Debug */
-#resume { background-color: white }
-/*header { background-color: green }*/
-/*main { background-color: blue }*/
-/*section { background-color: cyan }*/
-/*aside { background-color: magenta }*/
-/*footer { background-color: yellow }*/
-body { background-color: black }
-/*body { margin: 0 0 10cm 0 } */
-
-
-/* Reset */
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-/* Structure */
-body { font-size: 1.2em }
-#resume {
-	box-sizing: border-box;
-	padding: 2.5em;
-  width: 50em;
-}
-
-header {
-	padding-bottom: 2.5em;
-}
-
-main:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-section, aside {
-	float: left;
-}
-
-section {
-	width:30em;
-}
-
-aside {
-	padding-left: 2em;
-	padding-left: 2.5em;
-	width: 12.5em;
-}
-
-/* Print */
 @page {
-	size: A4;
+  size: A4;
 }
 
-/* Elements */
-
-button {
-	background-color: #fff;
-  border: 1px solid #000;
-	border-radius: 0.2em;
-	color: #000;
-	float: right;
-	height: 3em;
-	margin: 0.3em;
-	padding: 0;
-	overflow: hidden;
-	text-align: center;
-	width: 3em;
-}
-
-a:hover { color: red }
-button:hover { border-color: red }
-button:hover .fas { color: red }
-
-h1, h2, h3, p, ul {
+body {
+  background-color: white;
+  font-family: 'Rubik';
+  font-size: 1.2em;
+  line-height: 1.5em;
   margin: 0;
 }
 
-h2 { margin-top: 1.0em }
-h3 { margin-top: 1.0em }
+#resume {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2.5em;
+  width: 52em;
+}
+
+header {
+  padding-bottom: 2.2em;
+}
+
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section, aside {
+  float: left;
+}
+
+section {
+  width:32em;
+}
+
+section#form { display: none }
+
+aside {
+  padding-left: 2em;
+  padding-left: 2.5em;
+  width: 12.5em;
+}
+
+a { color: #000 }
+
+button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0.2em;
+  color: #000;
+  cursor: pointer;
+  float: right;
+  height: 3em;
+  margin: 0 0 0 .5em;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  text-align: center;
+  width: 3em;
+}
+
+a:hover, button:hover .fas { color: #3399ff }
+button:hover { border-color: #3399ff }
+#message-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+h1 { margin: 0; padding-top: .15em; }
+h2 { margin: 1em 0 .5em 0 }
+h3 { margin: 1em 0 .2em }
 h3:first-child { margin-top: 0 }
 
 p {
-	text-align: justify;
+  margin: 0;
+  text-align: justify;
 }
 
+input, textarea {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: .2em;
+  color: #000;
+  margin: 1em 0 0 0;
+  padding: .7em;
+}
+
+input[type=text], textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  height: 15em;
+  resize: none;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  margin: 1em auto;
+}
+
+input[type=submit]:hover {
+  border-color: #3399ff;
+  color: #3399ff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#taal span { float: right }
+
+.ervaring, .opleiding {
+  padding-bottom: .5em;
+}
 
 /* Dark */
-body, #resume, button, .fas {
-	transition: all 0.3s;
+body, #resume, a, button, .fas {
+  transition: all 0.2s;
 }
-body.dark,
-.dark button {
+
+body.dark, .dark a, .dark button {
   color: #fff;
 }
 
-.dark #resume,
-.dark button { background-color: #000 }
+body.dark, .dark #resume, .dark button { background-color: #000 }
 .dark button { border-color: #fff }
 
-.dark a:hover { color: yellow }
-.dark button:hover { border-color: yellow }
-.dark button:hover .fas { color: yellow }
+.dark a:hover, .dark button:hover .fas { color: #3399ff }
+.dark button:hover { border-color: #3399ff }
